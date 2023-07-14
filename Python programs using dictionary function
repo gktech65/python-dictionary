@@ -1,0 +1,162 @@
+(1)
+# Write a python program to read the elements of a dictionary from console I/O and display the dictionary
+d = {}
+n = eval(input("Enter size of dictionary:"))
+for i in range(n):        
+  text = input().split()     
+  d[text[0]] = text[1]    
+print(d)
+
+(2)
+# Write a python program to check whether or not the user-provided keys are available in the dictionary( use in operator)
+d = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+def is_key_present(x):
+  if x in d:
+      print('Key is present in the dictionary')
+  else:
+      print('Key is not present in the dictionary')
+is_key_present(10)
+is_key_present(5)
+
+(3)
+# Write a Python program to print the sorted dictionary
+dict = {'red':'#FF0000',
+          'green':'#008000',
+          'black':'#000000',
+          'white':'#FFFFFF'}
+
+for key in sorted(dict):
+    print("%s: %s" % (key, dict[key]))
+
+(4)
+# Write a python program to print the length of a dictionary
+dict = {"Micheal":20,"george":30,"james":40}
+print("Length of dictionary:",len(dict))
+
+(5)
+# Write a python program to compare two dictionaries
+dict1 = {'Name': 'Achu', 'Age': 28}
+dict2 = {'Name': 'Malu', 'Age': 25}
+  
+if dict1 == dict2:
+    print ("dict1 is equal to dict2")
+else:
+    print ("dict1 is not equal to dict2")
+
+(6)
+# Write a python program to print a dictionary where the keys are numbers between 1 and 159 both included) and the values are cubes of keys
+d=dict()
+for x in range(1,159):
+    d[x]=x**3
+print(d)
+
+(7)
+#Write a pythonWrite a python program to remove duplicates from Dictionary
+
+test_dict = { 'gfg' : 10, 'is' : 15, 'best' : 20, 'for' : 10, 'geeks' : 20}
+  
+
+print("The original dictionary is : " + str(test_dict))
+  
+
+temp = []
+res = dict()
+for key, val in test_dict.items():
+    if val not in temp:
+        temp.append(val)
+        res[key] = val
+  
+
+print("The dictionary after values removal : " + str(res))
+
+(8)
+dicdict1 = {'c1': 'Red', 'c2': 'Green', 'c3':None}
+print("Original Dictionary:")
+print(dict1)
+print("New Dictionary after dropping empty items:")
+dict1 = {key:value for (key, value) in dict1.items() if value is not None
+
+(9)
+# Write a Python program to demonstarte the dictionary functions functions and operations 
+#Creating new dictionary from previous values
+d1={1:"Apple",2:"Mango",3:"Guava",4:"Orange"}
+d2={1:"Carrot",2:"Spinach",3:"Raddish"}
+Fruits=d1.copy()
+Vegetable=d2.copy()
+print(Fruits)
+print(Vegetable)
+
+#Updating Dictionary	
+d1.update({5:"Black current"})
+print(d1)
+
+#Deleting keys from dictionary
+del d2[3]
+print(d2)
+
+#Printing as key value pairs
+print("The output:-",list(d1.items()))
+
+#Sorting dictionary
+d4={2:"How",4:"Why",1:"When",3:"What"}
+d3=dict(sorted(d4.items()))
+print(d3)
+
+#In-built functions
+
+#1.len
+print("Length of d1:",len(d1))
+#2.Update
+d3.update(d1)
+print(d3)
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
